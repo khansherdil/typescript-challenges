@@ -25,6 +25,7 @@
 
 /* _____________ Your Code Here _____________ */
 
+//you don't have to infer the args but its w/e, aslong as we can infer return.
 type MyReturnType<T> = T extends (...args: infer V) => infer R ? R : T;
 
 const fnx = (v: boolean) => {
